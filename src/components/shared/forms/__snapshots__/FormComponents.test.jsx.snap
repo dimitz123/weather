@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioField correctly fires its callback on change 1`] = `
+<RadioField
+  name="test_radio"
+  onChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "test_radio",
+          "op1",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  options={
+    Array [
+      Object {
+        "name": "Op1",
+        "value": "op1",
+      },
+      Object {
+        "name": "Op2",
+        "value": "op2",
+      },
+      Object {
+        "name": "Op3",
+        "value": "op3",
+      },
+      Object {
+        "name": "Op4",
+        "value": "op4",
+      },
+    ]
+  }
+  title="Radio Test"
+  value="op1"
+>
+  <div
+    className="form-field"
+  >
+    <label
+      htmlFor="test_radio_radio_field"
+    >
+      <span
+        className="label-text"
+      >
+        Radio Test
+      </span>
+      <div
+        className="radio-options"
+      >
+        <RadioOption
+          active={true}
+          groupName="test_radio"
+          key="op1"
+          name="Op1"
+          onChange={[Function]}
+          value="op1"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op1"
+          >
+            Op1
+            <input
+              checked={true}
+              id="test_radio_op1"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+        <RadioOption
+          active={false}
+          groupName="test_radio"
+          key="op2"
+          name="Op2"
+          onChange={[Function]}
+          value="op2"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op2"
+          >
+            Op2
+            <input
+              checked={false}
+              id="test_radio_op2"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+        <RadioOption
+          active={false}
+          groupName="test_radio"
+          key="op3"
+          name="Op3"
+          onChange={[Function]}
+          value="op3"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op3"
+          >
+            Op3
+            <input
+              checked={false}
+              id="test_radio_op3"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+        <RadioOption
+          active={false}
+          groupName="test_radio"
+          key="op4"
+          name="Op4"
+          onChange={[Function]}
+          value="op4"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op4"
+          >
+            Op4
+            <input
+              checked={false}
+              id="test_radio_op4"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+      </div>
+    </label>
+  </div>
+</RadioField>
+`;
+
+exports[`RadioField correctly fires its callback on change 2`] = `
+<RadioField
+  name="test_radio"
+  onChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "test_radio",
+          "op1",
+        ],
+        Array [
+          "test_radio",
+          "op3",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  options={
+    Array [
+      Object {
+        "name": "Op1",
+        "value": "op1",
+      },
+      Object {
+        "name": "Op2",
+        "value": "op2",
+      },
+      Object {
+        "name": "Op3",
+        "value": "op3",
+      },
+      Object {
+        "name": "Op4",
+        "value": "op4",
+      },
+    ]
+  }
+  title="Radio Test"
+  value="op1"
+>
+  <div
+    className="form-field"
+  >
+    <label
+      htmlFor="test_radio_radio_field"
+    >
+      <span
+        className="label-text"
+      >
+        Radio Test
+      </span>
+      <div
+        className="radio-options"
+      >
+        <RadioOption
+          active={true}
+          groupName="test_radio"
+          key="op1"
+          name="Op1"
+          onChange={[Function]}
+          value="op1"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op1"
+          >
+            Op1
+            <input
+              checked={true}
+              id="test_radio_op1"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+        <RadioOption
+          active={false}
+          groupName="test_radio"
+          key="op2"
+          name="Op2"
+          onChange={[Function]}
+          value="op2"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op2"
+          >
+            Op2
+            <input
+              checked={false}
+              id="test_radio_op2"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+        <RadioOption
+          active={false}
+          groupName="test_radio"
+          key="op3"
+          name="Op3"
+          onChange={[Function]}
+          value="op3"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op3"
+          >
+            Op3
+            <input
+              checked={false}
+              id="test_radio_op3"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+        <RadioOption
+          active={false}
+          groupName="test_radio"
+          key="op4"
+          name="Op4"
+          onChange={[Function]}
+          value="op4"
+        >
+          <label
+            className="radio-option"
+            htmlFor="test_radio_op4"
+          >
+            Op4
+            <input
+              checked={false}
+              id="test_radio_op4"
+              name="test_radio"
+              onChange={[Function]}
+              type="radio"
+            />
+            <span
+              className="checkmark"
+            />
+          </label>
+        </RadioOption>
+      </div>
+    </label>
+  </div>
+</RadioField>
+`;
+
+exports[`RadioField renders correctly based on the selected value 1`] = `
+<div
+  className="form-field"
+>
+  <label
+    htmlFor="test_radio_radio_field"
+  >
+    <span
+      className="label-text"
+    >
+      Radio Test
+    </span>
+    <div
+      className="radio-options"
+    >
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op1"
+      >
+        Op1
+        <input
+          checked={true}
+          id="test_radio_op1"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op2"
+      >
+        Op2
+        <input
+          checked={false}
+          id="test_radio_op2"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op3"
+      >
+        Op3
+        <input
+          checked={false}
+          id="test_radio_op3"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op4"
+      >
+        Op4
+        <input
+          checked={false}
+          id="test_radio_op4"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`RadioField renders correctly based on the selected value 2`] = `
+<div
+  className="form-field"
+>
+  <label
+    htmlFor="test_radio_radio_field"
+  >
+    <span
+      className="label-text"
+    >
+      Radio Test
+    </span>
+    <div
+      className="radio-options"
+    >
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op1"
+      >
+        Op1
+        <input
+          checked={false}
+          id="test_radio_op1"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op2"
+      >
+        Op2
+        <input
+          checked={false}
+          id="test_radio_op2"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op3"
+      >
+        Op3
+        <input
+          checked={true}
+          id="test_radio_op3"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <label
+        className="radio-option"
+        htmlFor="test_radio_op4"
+      >
+        Op4
+        <input
+          checked={false}
+          id="test_radio_op4"
+          name="test_radio"
+          onChange={[Function]}
+          type="radio"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`TextField correctly renders its initial properties 1`] = `
+<div
+  className="form-field"
+>
+  <label
+    htmlFor="test_text_text_field"
+  >
+    <span
+      className="label-text"
+    >
+      Test Text
+    </span>
+    <input
+      id="test_text_text_field"
+      name="test_text"
+      onChange={[Function]}
+      type="text"
+      value="Testing text field"
+    />
+  </label>
+</div>
+`;

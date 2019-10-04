@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Widget correctly displays a different title 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="weather-widget"
+  >
+    <h3>
+      New title
+    </h3>
+    <div
+      className="widget-container"
+    >
+      <div
+        className="widget-icon"
+      >
+        <img
+          alt="weather conditions"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+        />
+      </div>
+      <div
+        className="widget-data"
+      >
+        <p>
+          Sydney
+        </p>
+        <p
+          className="highlight"
+        >
+          20
+          °
+        </p>
+        <p
+          className="caption"
+        >
+          <b
+            className="right-spaced"
+          >
+            Wind
+          </b>
+          NE 10km/h
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Widget correctly displays temperature in Celcius 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="weather-widget"
+  >
+    <h3>
+      Title of Widget
+    </h3>
+    <div
+      className="widget-container"
+    >
+      <div
+        className="widget-icon"
+      >
+        <img
+          alt="weather conditions"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+        />
+      </div>
+      <div
+        className="widget-data"
+      >
+        <p>
+          Sydney
+        </p>
+        <p
+          className="highlight"
+        >
+          20
+          °
+        </p>
+        <p
+          className="caption"
+        >
+          <b
+            className="right-spaced"
+          >
+            Wind
+          </b>
+          NE 10km/h
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Widget correctly displays temperature in Fahrenheit 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="weather-widget"
+  >
+    <h3>
+      Title of Widget
+    </h3>
+    <div
+      className="widget-container"
+    >
+      <div
+        className="widget-icon"
+      >
+        <img
+          alt="weather conditions"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+        />
+      </div>
+      <div
+        className="widget-data"
+      >
+        <p>
+          Sydney
+        </p>
+        <p
+          className="highlight"
+        >
+          65
+          °
+        </p>
+        <p
+          className="caption"
+        >
+          <b
+            className="right-spaced"
+          >
+            Wind
+          </b>
+          NE 10km/h
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Widget correctly displays without wind information 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="weather-widget"
+  >
+    <h3>
+      Title of Widget
+    </h3>
+    <div
+      className="widget-container"
+    >
+      <div
+        className="widget-icon"
+      >
+        <img
+          alt="weather conditions"
+          src="http://openweathermap.org/img/wn/01d@2x.png"
+        />
+      </div>
+      <div
+        className="widget-data"
+      >
+        <p>
+          Sydney
+        </p>
+        <p
+          className="highlight"
+        >
+          20
+          °
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

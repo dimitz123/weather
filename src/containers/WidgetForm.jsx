@@ -10,6 +10,7 @@ import {
 import requestLocation from '../services/locationService';
 import requestWeather from '../services/weatherService';
 
+import Error from '../components/shared/Error';
 import Loader from '../components/shared/Loader';
 import RadioField from '../components/shared/forms/RadioField';
 import TextField from '../components/shared/forms/TextField';
@@ -37,7 +38,7 @@ const windOptions = [
   },
 ];
 
-const WidgetForm = (props) => {
+export const WidgetForm = (props) => {
   const {
     formState,
     formValues,
@@ -56,6 +57,10 @@ const WidgetForm = (props) => {
   if (formState === FormState.GETTING_WEATHER) {
     getWeather(location);
     return (<Loader message="Requesting weather information" />);
+  }
+
+  if (formState === FormState.WEATHER_ERROR) {
+    return (<Error message="Weather data is currently not available. Please try again later." />);
   }
 
   return (

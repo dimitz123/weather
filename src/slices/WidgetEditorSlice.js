@@ -4,6 +4,7 @@ import { createSlice } from 'redux-starter-kit';
 export const FormState = {
   GETTING_LOCATION: 'GETTING_LOCATION',
   GETTING_WEATHER: 'GETTING_WEATHER',
+  WEATHER_ERROR: 'WEATHER_ERROR',
   READY: 'READY',
 };
 
@@ -39,9 +40,8 @@ const widgetEditorSlice = createSlice({
       state.weatherData = action.payload;
       state.formState = FormState.READY;
     },
-    weatherError(state, action) {
-      state.weatherData = action.payload;
-      state.formState = FormState.READY;
+    weatherError(state) {
+      state.formState = FormState.WEATHER_ERROR;
     },
 
     formUpdate(state, action) {

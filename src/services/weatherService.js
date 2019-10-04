@@ -13,15 +13,6 @@ import {
 
 const APPID = '0f35c3e68c5743fbf2eb05e506ed4398';
 
-const defaultWeather = {
-  location: 'ERROR',
-  windDirection: 'ERROR',
-  windSpeed: '0',
-  iconLocation: 'http://openweathermap.org/img/wn/ERROR.png',
-  celTemp: '0',
-  farTemp: '0',
-};
-
 const processWind = ({ deg, speed }) => ({
   windDirection: degToCompass(deg),
   windSpeed: mpsToKmph(speed),
@@ -36,7 +27,7 @@ const processTemp = ({ temp }) => ({
   farTemp: kelvinToFar(temp),
 });
 
-const processResult = (result) => {
+export const processResult = (result) => {
   const location = result.name;
   const { windDirection, windSpeed } = processWind(result.wind);
   const iconLocation = getIconLocation(result.weather[0]);
@@ -63,13 +54,19 @@ const requestWeather = (location) => (dispatch) => {
   };
 
   const weatherCallError = (error) => {
-    console.log(`Weather API error occurred. Error code: ${error.code}`);
-    dispatch(weatherError(defaultWeather));
+    console.log(`Weather API error occurred. ${error}`);
+    dispatch(weatherError());
   };
 
   fetch(url)
-    .then((res) => res.json())
-    .then(weatherCallSuccess, weatherCallError);
+    .then((res) => {
+      if (!res.ok) {
+        throw Error(res.statusText);
+      }
+      return res.json();
+    })
+    .then(weatherCallSuccess)
+    .catch(weatherCallError);
 };
 
 export default requestWeather;

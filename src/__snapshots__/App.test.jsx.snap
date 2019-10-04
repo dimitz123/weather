@@ -1,0 +1,1806 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`end to end test with settings updates 1`] = `
+<Connect(Component)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Component
+    formState="GETTING_LOCATION"
+    formValues={
+      Object {
+        "temp": "cel",
+        "title": "Title of widget",
+        "wind": true,
+      }
+    }
+    location={Object {}}
+    onFormUpdate={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    weatherData={Object {}}
+  >
+    <WidgetForm
+      formState="GETTING_LOCATION"
+      formValues={
+        Object {
+          "temp": "cel",
+          "title": "Title of widget",
+          "wind": true,
+        }
+      }
+      getLocation={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      getWeather={[MockFunction]}
+      location={Object {}}
+      onFormUpdate={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      weatherData={Object {}}
+    >
+      <Loader
+        message="Requesting location information"
+      >
+        <div
+          className="loader"
+        >
+          <h3>
+            Requesting location information
+          </h3>
+          <h3>
+            Loading...
+          </h3>
+        </div>
+      </Loader>
+    </WidgetForm>
+  </Component>
+</Connect(Component)>
+`;
+
+exports[`end to end test with settings updates 2`] = `
+<Connect(Component)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Component
+    formState="GETTING_WEATHER"
+    formValues={
+      Object {
+        "temp": "cel",
+        "title": "Title of widget",
+        "wind": true,
+      }
+    }
+    location={
+      Object {
+        "latitude": 150,
+        "longitude": -33,
+      }
+    }
+    onFormUpdate={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    weatherData={Object {}}
+  >
+    <WidgetForm
+      formState="GETTING_WEATHER"
+      formValues={
+        Object {
+          "temp": "cel",
+          "title": "Title of widget",
+          "wind": true,
+        }
+      }
+      getLocation={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      getWeather={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "latitude": 150,
+                "longitude": -33,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      location={
+        Object {
+          "latitude": 150,
+          "longitude": -33,
+        }
+      }
+      onFormUpdate={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      weatherData={Object {}}
+    >
+      <Loader
+        message="Requesting weather information"
+      >
+        <div
+          className="loader"
+        >
+          <h3>
+            Requesting weather information
+          </h3>
+          <h3>
+            Loading...
+          </h3>
+        </div>
+      </Loader>
+    </WidgetForm>
+  </Component>
+</Connect(Component)>
+`;
+
+exports[`end to end test with settings updates 3`] = `
+Object {
+  "celTemp": "30",
+  "farTemp": "85",
+  "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+  "location": "Castle Hill",
+  "windDirection": "E",
+  "windSpeed": "8",
+}
+`;
+
+exports[`end to end test with settings updates 4`] = `
+<Connect(Component)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Component
+    formState="READY"
+    formValues={
+      Object {
+        "temp": "cel",
+        "title": "Title of widget",
+        "wind": true,
+      }
+    }
+    location={
+      Object {
+        "latitude": 150,
+        "longitude": -33,
+      }
+    }
+    onFormUpdate={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    weatherData={
+      Object {
+        "celTemp": "30",
+        "farTemp": "85",
+        "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+        "location": "Castle Hill",
+        "windDirection": "E",
+        "windSpeed": "8",
+      }
+    }
+  >
+    <WidgetForm
+      formState="READY"
+      formValues={
+        Object {
+          "temp": "cel",
+          "title": "Title of widget",
+          "wind": true,
+        }
+      }
+      getLocation={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      getWeather={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "latitude": 150,
+                "longitude": -33,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      location={
+        Object {
+          "latitude": 150,
+          "longitude": -33,
+        }
+      }
+      onFormUpdate={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      weatherData={
+        Object {
+          "celTemp": "30",
+          "farTemp": "85",
+          "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+          "location": "Castle Hill",
+          "windDirection": "E",
+          "windSpeed": "8",
+        }
+      }
+    >
+      <div
+        className="widget-form"
+      >
+        <div
+          className="widget-settings"
+        >
+          <TextField
+            name="title"
+            onChange={[Function]}
+            title="Title"
+            value="Title of widget"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="title_text_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Title
+                </span>
+                <input
+                  id="title_text_field"
+                  name="title"
+                  onChange={[Function]}
+                  type="text"
+                  value="Title of widget"
+                />
+              </label>
+            </div>
+          </TextField>
+          <RadioField
+            name="temp"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "°C",
+                  "value": "cel",
+                },
+                Object {
+                  "name": "°F",
+                  "value": "far",
+                },
+              ]
+            }
+            title="Temperature"
+            value="cel"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="temp_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Temperature
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={true}
+                    groupName="temp"
+                    key="cel"
+                    name="°C"
+                    onChange={[Function]}
+                    value="cel"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_cel"
+                    >
+                      °C
+                      <input
+                        checked={true}
+                        id="temp_cel"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={false}
+                    groupName="temp"
+                    key="far"
+                    name="°F"
+                    onChange={[Function]}
+                    value="far"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_far"
+                    >
+                      °F
+                      <input
+                        checked={false}
+                        id="temp_far"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+          <RadioField
+            name="wind"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "On",
+                  "value": true,
+                },
+                Object {
+                  "name": "Off",
+                  "value": false,
+                },
+              ]
+            }
+            title="Wind"
+            value={true}
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="wind_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Wind
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={true}
+                    groupName="wind"
+                    key="true"
+                    name="On"
+                    onChange={[Function]}
+                    value={true}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_true"
+                    >
+                      On
+                      <input
+                        checked={true}
+                        id="wind_true"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={false}
+                    groupName="wind"
+                    key="false"
+                    name="Off"
+                    onChange={[Function]}
+                    value={false}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_false"
+                    >
+                      Off
+                      <input
+                        checked={false}
+                        id="wind_false"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+        </div>
+        <div
+          className="vertical-separator"
+        />
+        <div>
+          <Widget
+            data={
+              Object {
+                "celTemp": "30",
+                "farTemp": "85",
+                "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+                "location": "Castle Hill",
+                "windDirection": "E",
+                "windSpeed": "8",
+              }
+            }
+            showWind={true}
+            title="Title of widget"
+            units="cel"
+          >
+            <Card>
+              <div
+                className="card"
+              >
+                <div
+                  className="weather-widget"
+                >
+                  <h3>
+                    Title of widget
+                  </h3>
+                  <div
+                    className="widget-container"
+                  >
+                    <div
+                      className="widget-icon"
+                    >
+                      <img
+                        alt="weather conditions"
+                        src="http://openweathermap.org/img/wn/01n@2x.png"
+                      />
+                    </div>
+                    <div
+                      className="widget-data"
+                    >
+                      <p>
+                        Castle Hill
+                      </p>
+                      <p
+                        className="highlight"
+                      >
+                        30
+                        °
+                      </p>
+                      <WindInformation
+                        direction="E"
+                        speed="8"
+                      >
+                        <p
+                          className="caption"
+                        >
+                          <b
+                            className="right-spaced"
+                          >
+                            Wind
+                          </b>
+                          E 8km/h
+                        </p>
+                      </WindInformation>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </Widget>
+        </div>
+      </div>
+    </WidgetForm>
+  </Component>
+</Connect(Component)>
+`;
+
+exports[`end to end test with settings updates 5`] = `
+<Connect(Component)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Component
+    formState="READY"
+    formValues={
+      Object {
+        "temp": "cel",
+        "title": "New Title",
+        "wind": true,
+      }
+    }
+    location={
+      Object {
+        "latitude": 150,
+        "longitude": -33,
+      }
+    }
+    onFormUpdate={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    weatherData={
+      Object {
+        "celTemp": "30",
+        "farTemp": "85",
+        "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+        "location": "Castle Hill",
+        "windDirection": "E",
+        "windSpeed": "8",
+      }
+    }
+  >
+    <WidgetForm
+      formState="READY"
+      formValues={
+        Object {
+          "temp": "cel",
+          "title": "New Title",
+          "wind": true,
+        }
+      }
+      getLocation={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      getWeather={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "latitude": 150,
+                "longitude": -33,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      location={
+        Object {
+          "latitude": 150,
+          "longitude": -33,
+        }
+      }
+      onFormUpdate={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      weatherData={
+        Object {
+          "celTemp": "30",
+          "farTemp": "85",
+          "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+          "location": "Castle Hill",
+          "windDirection": "E",
+          "windSpeed": "8",
+        }
+      }
+    >
+      <div
+        className="widget-form"
+      >
+        <div
+          className="widget-settings"
+        >
+          <TextField
+            name="title"
+            onChange={[Function]}
+            title="Title"
+            value="New Title"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="title_text_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Title
+                </span>
+                <input
+                  id="title_text_field"
+                  name="title"
+                  onChange={[Function]}
+                  type="text"
+                  value="New Title"
+                />
+              </label>
+            </div>
+          </TextField>
+          <RadioField
+            name="temp"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "°C",
+                  "value": "cel",
+                },
+                Object {
+                  "name": "°F",
+                  "value": "far",
+                },
+              ]
+            }
+            title="Temperature"
+            value="cel"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="temp_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Temperature
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={true}
+                    groupName="temp"
+                    key="cel"
+                    name="°C"
+                    onChange={[Function]}
+                    value="cel"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_cel"
+                    >
+                      °C
+                      <input
+                        checked={true}
+                        id="temp_cel"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={false}
+                    groupName="temp"
+                    key="far"
+                    name="°F"
+                    onChange={[Function]}
+                    value="far"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_far"
+                    >
+                      °F
+                      <input
+                        checked={false}
+                        id="temp_far"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+          <RadioField
+            name="wind"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "On",
+                  "value": true,
+                },
+                Object {
+                  "name": "Off",
+                  "value": false,
+                },
+              ]
+            }
+            title="Wind"
+            value={true}
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="wind_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Wind
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={true}
+                    groupName="wind"
+                    key="true"
+                    name="On"
+                    onChange={[Function]}
+                    value={true}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_true"
+                    >
+                      On
+                      <input
+                        checked={true}
+                        id="wind_true"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={false}
+                    groupName="wind"
+                    key="false"
+                    name="Off"
+                    onChange={[Function]}
+                    value={false}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_false"
+                    >
+                      Off
+                      <input
+                        checked={false}
+                        id="wind_false"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+        </div>
+        <div
+          className="vertical-separator"
+        />
+        <div>
+          <Widget
+            data={
+              Object {
+                "celTemp": "30",
+                "farTemp": "85",
+                "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+                "location": "Castle Hill",
+                "windDirection": "E",
+                "windSpeed": "8",
+              }
+            }
+            showWind={true}
+            title="New Title"
+            units="cel"
+          >
+            <Card>
+              <div
+                className="card"
+              >
+                <div
+                  className="weather-widget"
+                >
+                  <h3>
+                    New Title
+                  </h3>
+                  <div
+                    className="widget-container"
+                  >
+                    <div
+                      className="widget-icon"
+                    >
+                      <img
+                        alt="weather conditions"
+                        src="http://openweathermap.org/img/wn/01n@2x.png"
+                      />
+                    </div>
+                    <div
+                      className="widget-data"
+                    >
+                      <p>
+                        Castle Hill
+                      </p>
+                      <p
+                        className="highlight"
+                      >
+                        30
+                        °
+                      </p>
+                      <WindInformation
+                        direction="E"
+                        speed="8"
+                      >
+                        <p
+                          className="caption"
+                        >
+                          <b
+                            className="right-spaced"
+                          >
+                            Wind
+                          </b>
+                          E 8km/h
+                        </p>
+                      </WindInformation>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </Widget>
+        </div>
+      </div>
+    </WidgetForm>
+  </Component>
+</Connect(Component)>
+`;
+
+exports[`end to end test with settings updates 6`] = `
+<Connect(Component)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Component
+    formState="READY"
+    formValues={
+      Object {
+        "temp": "far",
+        "title": "New Title",
+        "wind": true,
+      }
+    }
+    location={
+      Object {
+        "latitude": 150,
+        "longitude": -33,
+      }
+    }
+    onFormUpdate={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    weatherData={
+      Object {
+        "celTemp": "30",
+        "farTemp": "85",
+        "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+        "location": "Castle Hill",
+        "windDirection": "E",
+        "windSpeed": "8",
+      }
+    }
+  >
+    <WidgetForm
+      formState="READY"
+      formValues={
+        Object {
+          "temp": "far",
+          "title": "New Title",
+          "wind": true,
+        }
+      }
+      getLocation={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      getWeather={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "latitude": 150,
+                "longitude": -33,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      location={
+        Object {
+          "latitude": 150,
+          "longitude": -33,
+        }
+      }
+      onFormUpdate={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      weatherData={
+        Object {
+          "celTemp": "30",
+          "farTemp": "85",
+          "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+          "location": "Castle Hill",
+          "windDirection": "E",
+          "windSpeed": "8",
+        }
+      }
+    >
+      <div
+        className="widget-form"
+      >
+        <div
+          className="widget-settings"
+        >
+          <TextField
+            name="title"
+            onChange={[Function]}
+            title="Title"
+            value="New Title"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="title_text_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Title
+                </span>
+                <input
+                  id="title_text_field"
+                  name="title"
+                  onChange={[Function]}
+                  type="text"
+                  value="New Title"
+                />
+              </label>
+            </div>
+          </TextField>
+          <RadioField
+            name="temp"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "°C",
+                  "value": "cel",
+                },
+                Object {
+                  "name": "°F",
+                  "value": "far",
+                },
+              ]
+            }
+            title="Temperature"
+            value="far"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="temp_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Temperature
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={false}
+                    groupName="temp"
+                    key="cel"
+                    name="°C"
+                    onChange={[Function]}
+                    value="cel"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_cel"
+                    >
+                      °C
+                      <input
+                        checked={false}
+                        id="temp_cel"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={true}
+                    groupName="temp"
+                    key="far"
+                    name="°F"
+                    onChange={[Function]}
+                    value="far"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_far"
+                    >
+                      °F
+                      <input
+                        checked={true}
+                        id="temp_far"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+          <RadioField
+            name="wind"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "On",
+                  "value": true,
+                },
+                Object {
+                  "name": "Off",
+                  "value": false,
+                },
+              ]
+            }
+            title="Wind"
+            value={true}
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="wind_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Wind
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={true}
+                    groupName="wind"
+                    key="true"
+                    name="On"
+                    onChange={[Function]}
+                    value={true}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_true"
+                    >
+                      On
+                      <input
+                        checked={true}
+                        id="wind_true"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={false}
+                    groupName="wind"
+                    key="false"
+                    name="Off"
+                    onChange={[Function]}
+                    value={false}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_false"
+                    >
+                      Off
+                      <input
+                        checked={false}
+                        id="wind_false"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+        </div>
+        <div
+          className="vertical-separator"
+        />
+        <div>
+          <Widget
+            data={
+              Object {
+                "celTemp": "30",
+                "farTemp": "85",
+                "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+                "location": "Castle Hill",
+                "windDirection": "E",
+                "windSpeed": "8",
+              }
+            }
+            showWind={true}
+            title="New Title"
+            units="far"
+          >
+            <Card>
+              <div
+                className="card"
+              >
+                <div
+                  className="weather-widget"
+                >
+                  <h3>
+                    New Title
+                  </h3>
+                  <div
+                    className="widget-container"
+                  >
+                    <div
+                      className="widget-icon"
+                    >
+                      <img
+                        alt="weather conditions"
+                        src="http://openweathermap.org/img/wn/01n@2x.png"
+                      />
+                    </div>
+                    <div
+                      className="widget-data"
+                    >
+                      <p>
+                        Castle Hill
+                      </p>
+                      <p
+                        className="highlight"
+                      >
+                        85
+                        °
+                      </p>
+                      <WindInformation
+                        direction="E"
+                        speed="8"
+                      >
+                        <p
+                          className="caption"
+                        >
+                          <b
+                            className="right-spaced"
+                          >
+                            Wind
+                          </b>
+                          E 8km/h
+                        </p>
+                      </WindInformation>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </Widget>
+        </div>
+      </div>
+    </WidgetForm>
+  </Component>
+</Connect(Component)>
+`;
+
+exports[`end to end test with settings updates 7`] = `
+<Connect(Component)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Component
+    formState="READY"
+    formValues={
+      Object {
+        "temp": "far",
+        "title": "New Title",
+        "wind": false,
+      }
+    }
+    location={
+      Object {
+        "latitude": 150,
+        "longitude": -33,
+      }
+    }
+    onFormUpdate={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    weatherData={
+      Object {
+        "celTemp": "30",
+        "farTemp": "85",
+        "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+        "location": "Castle Hill",
+        "windDirection": "E",
+        "windSpeed": "8",
+      }
+    }
+  >
+    <WidgetForm
+      formState="READY"
+      formValues={
+        Object {
+          "temp": "far",
+          "title": "New Title",
+          "wind": false,
+        }
+      }
+      getLocation={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      getWeather={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "latitude": 150,
+                "longitude": -33,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      location={
+        Object {
+          "latitude": 150,
+          "longitude": -33,
+        }
+      }
+      onFormUpdate={[Function]}
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+      weatherData={
+        Object {
+          "celTemp": "30",
+          "farTemp": "85",
+          "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+          "location": "Castle Hill",
+          "windDirection": "E",
+          "windSpeed": "8",
+        }
+      }
+    >
+      <div
+        className="widget-form"
+      >
+        <div
+          className="widget-settings"
+        >
+          <TextField
+            name="title"
+            onChange={[Function]}
+            title="Title"
+            value="New Title"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="title_text_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Title
+                </span>
+                <input
+                  id="title_text_field"
+                  name="title"
+                  onChange={[Function]}
+                  type="text"
+                  value="New Title"
+                />
+              </label>
+            </div>
+          </TextField>
+          <RadioField
+            name="temp"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "°C",
+                  "value": "cel",
+                },
+                Object {
+                  "name": "°F",
+                  "value": "far",
+                },
+              ]
+            }
+            title="Temperature"
+            value="far"
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="temp_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Temperature
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={false}
+                    groupName="temp"
+                    key="cel"
+                    name="°C"
+                    onChange={[Function]}
+                    value="cel"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_cel"
+                    >
+                      °C
+                      <input
+                        checked={false}
+                        id="temp_cel"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={true}
+                    groupName="temp"
+                    key="far"
+                    name="°F"
+                    onChange={[Function]}
+                    value="far"
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="temp_far"
+                    >
+                      °F
+                      <input
+                        checked={true}
+                        id="temp_far"
+                        name="temp"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+          <RadioField
+            name="wind"
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "name": "On",
+                  "value": true,
+                },
+                Object {
+                  "name": "Off",
+                  "value": false,
+                },
+              ]
+            }
+            title="Wind"
+            value={false}
+          >
+            <div
+              className="form-field"
+            >
+              <label
+                htmlFor="wind_radio_field"
+              >
+                <span
+                  className="label-text"
+                >
+                  Wind
+                </span>
+                <div
+                  className="radio-options"
+                >
+                  <RadioOption
+                    active={false}
+                    groupName="wind"
+                    key="true"
+                    name="On"
+                    onChange={[Function]}
+                    value={true}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_true"
+                    >
+                      On
+                      <input
+                        checked={false}
+                        id="wind_true"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                  <RadioOption
+                    active={true}
+                    groupName="wind"
+                    key="false"
+                    name="Off"
+                    onChange={[Function]}
+                    value={false}
+                  >
+                    <label
+                      className="radio-option"
+                      htmlFor="wind_false"
+                    >
+                      Off
+                      <input
+                        checked={true}
+                        id="wind_false"
+                        name="wind"
+                        onChange={[Function]}
+                        type="radio"
+                      />
+                      <span
+                        className="checkmark"
+                      />
+                    </label>
+                  </RadioOption>
+                </div>
+              </label>
+            </div>
+          </RadioField>
+        </div>
+        <div
+          className="vertical-separator"
+        />
+        <div>
+          <Widget
+            data={
+              Object {
+                "celTemp": "30",
+                "farTemp": "85",
+                "iconLocation": "http://openweathermap.org/img/wn/01n@2x.png",
+                "location": "Castle Hill",
+                "windDirection": "E",
+                "windSpeed": "8",
+              }
+            }
+            showWind={false}
+            title="New Title"
+            units="far"
+          >
+            <Card>
+              <div
+                className="card"
+              >
+                <div
+                  className="weather-widget"
+                >
+                  <h3>
+                    New Title
+                  </h3>
+                  <div
+                    className="widget-container"
+                  >
+                    <div
+                      className="widget-icon"
+                    >
+                      <img
+                        alt="weather conditions"
+                        src="http://openweathermap.org/img/wn/01n@2x.png"
+                      />
+                    </div>
+                    <div
+                      className="widget-data"
+                    >
+                      <p>
+                        Castle Hill
+                      </p>
+                      <p
+                        className="highlight"
+                      >
+                        85
+                        °
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </Widget>
+        </div>
+      </div>
+    </WidgetForm>
+  </Component>
+</Connect(Component)>
+`;
