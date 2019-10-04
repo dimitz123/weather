@@ -15,7 +15,7 @@ const textProps = {
   onChange: jest.fn(),
 };
 
-test('TextField correctly renders its initial properties', () => {
+it('correctly renders initial TextField properties', () => {
   const textfield = renderer.create(
     <TextField {...textProps} />,
   );
@@ -24,7 +24,7 @@ test('TextField correctly renders its initial properties', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('TextField correctly fires its callback on change', () => {
+it('correctly fires its callback on TextField change', () => {
   const textfield = mount(<TextField {...textProps} />);
   textfield.find('input').simulate('change', { target: { value: 'New Text' } });
 
@@ -44,7 +44,7 @@ const radioProps = {
   onChange: jest.fn(),
 };
 
-test('RadioField renders correctly based on the selected value', () => {
+it('renders the RadioField correctly based on the selected value', () => {
   let radiofield = renderer.create(
     <RadioField {...radioProps} />,
   );
@@ -60,7 +60,7 @@ test('RadioField renders correctly based on the selected value', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('RadioField correctly fires its callback on change', () => {
+it('correctly fires RadioField callbacks on change', () => {
   const radiofield = mount(<RadioField {...radioProps} />);
 
   // Select the current option and make sure no change event is fired

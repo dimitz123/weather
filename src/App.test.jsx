@@ -37,7 +37,7 @@ const testResponse = {
   cod: 200,
 };
 
-it('end to end test with settings updates', () => {
+it('runs end to end, loads data and updates correctly on form inputs', () => {
   // set up the store
   const store = configureStore({
     reducer: {

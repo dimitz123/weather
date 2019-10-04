@@ -11,7 +11,7 @@ const tempData = {
   farTemp: '65',
 };
 
-test('Widget correctly displays temperature in Celcius', () => {
+it('correctly displays temperature in Celcius', () => {
   const component = renderer.create(
     <Widget title="Title of Widget" units="cel" showWind data={tempData} />,
   );
@@ -19,7 +19,7 @@ test('Widget correctly displays temperature in Celcius', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('Widget correctly displays temperature in Fahrenheit', () => {
+it('correctly displays temperature in Fahrenheit', () => {
   const component = renderer.create(
     <Widget title="Title of Widget" units="far" showWind data={tempData} />,
   );
@@ -27,7 +27,7 @@ test('Widget correctly displays temperature in Fahrenheit', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('Widget correctly displays a different title', () => {
+it('correctly displays a different title', () => {
   const component = renderer.create(
     <Widget title="New title" units="cel" showWind data={tempData} />,
   );
@@ -35,7 +35,7 @@ test('Widget correctly displays a different title', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('Widget correctly displays without wind information', () => {
+it('correctly displays without wind information', () => {
   const component = renderer.create(
     <Widget title="Title of Widget" units="cel" showWind={false} data={tempData} />,
   );
