@@ -1,13 +1,13 @@
-#Requirements:
+# Requirements:
 - Node.js
 - npm
 
-#Instructions:
+# Instructions:
 - Clone or download the repository.
 - Run npm install in the project's root directory to install dependancies
 - Run npm start to start a local instance of the app in development mode
 
-#Approach:
+# Approach:
 
 Libraries used:
  - ReactJS (UI Framework)
@@ -19,7 +19,7 @@ Libraries used:
 
 While the specified task needs very limited state information, and could be completed without using Redux, I approached the problem as a smaller piece of a larger fully featured web application where a central state store would be necessary, and this approach informs the choice of libraries, as well as the project structure.
 
-#Assumptions:
+# Assumptions:
 
 Requirements:
  - The small interface shown is part of a larger web application, and should be composed from re-usable components
